@@ -16,7 +16,9 @@ app.use(express.json())
 app.use("/api/journals",router)
 const port = 8080
 
-
+app.get((req,res)=>{
+    res.send("hello baby")
+})
 app.listen(port,()=>{
     console.log(`i am in port ${port}`);
 })
